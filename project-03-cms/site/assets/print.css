@@ -1,0 +1,108 @@
+/* Article print design: all essential copy remains, UI chrome is removed. */
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+html,body {
+  background: #fff!important;
+  color: #000!important;
+  font: 10.5pt/1.65 'Yu Gothic',sans-serif!important;
+}
+
+a {
+  color: #000!important;
+}
+
+.demo,.header,.hero,.mainnav,.categories,.pagination,.about,.footer,.skip,.print-tools,.related {
+  display: none!important;
+}
+
+.wrap {
+  width: 100%!important;
+  max-width: none!important;
+}
+
+.breadcrumbs {
+  padding: 0 0 5mm;
+  margin-bottom: 7mm;
+}
+
+.breadcrumbs li {
+  font-size: 9pt;
+}
+
+.article-detail {
+  width: 100%!important;
+  padding: 0!important;
+}
+
+.article-detail h1 {
+  font-size: 22pt!important;
+  line-height: 1.4;
+}
+
+.detail-summary {
+  font-size: 11pt!important;
+  margin: 5mm 0!important;
+  padding: 0 0 5mm!important;
+}
+
+.article-body {
+  font-size: 10.5pt!important;
+  line-height: 1.75!important;
+}
+
+.article-body h2 {
+  font-size: 14pt!important;
+  border-left: 3px solid #777;
+  break-after: avoid-page;
+}
+
+.article-body ul {
+  background: #fff!important;
+  border: 1px solid #ccc;
+}
+
+.article-row {
+  break-inside: avoid-page;
+}
+
+.article-row h3 {
+  font-size: 12pt;
+}
+
+.news-section {
+  padding: 0;
+}
+
+.section-title {
+  margin: 0 0 6mm;
+}
+
+.section-title h2 {
+  font-size: 18pt;
+}
+
+.section-title p {
+  display: none;
+}
+
+h1,h2,h3 {
+  break-after: avoid-page;
+}
+
+p,li {
+  orphans: 3;
+  widows: 3;
+}
+
+/* 印刷物単体でも架空の制作サンプルと分かるようにする。 */
+.print-source {
+  display: block!important;
+  font-size: 8.5pt;
+  color: #444!important;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 3mm;
+  margin: 0 0 6mm;
+}

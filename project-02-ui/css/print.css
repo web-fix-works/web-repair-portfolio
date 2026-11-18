@@ -1,0 +1,87 @@
+/* Print every category and expanded answers (the JS beforeprint handler temporarily opens details). */
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+html,body {
+  background: #fff!important;
+  color: #000!important;
+  font: 10pt/1.5 'Yu Gothic',sans-serif!important;
+}
+
+.demo,.header,.hero,.tabs,.search-area,.print-btn,.engineering-note,.contact,.footer,.skip,.empty-state {
+  display: none!important;
+}
+
+.container {
+  width: 100%!important;
+  max-width: none!important;
+}
+
+.help {
+  padding: 0!important;
+}
+
+.help-header {
+  margin: 0 0 6mm;
+}
+
+.help-header h2 {
+  font-size: 19pt;
+}
+
+.tab-panel,.tab-panel[hidden] {
+  display: block!important;
+  margin: 0 0 10mm!important;
+}
+
+.panel-intro {
+  margin: 0 0 3mm;
+}
+
+.panel-intro h3 {
+  font-size: 15pt;
+}
+
+.panel-intro p {
+  color: #333!important;
+}
+
+.category-icon {
+  display: none;
+}
+
+.faq,.faq[hidden] {
+  display: block!important;
+  border-color: #bbb!important;
+}
+
+.faq summary {
+  padding: 3mm 1mm;
+  font-weight: 800;
+  min-height: 0;
+}
+
+.faq summary:after {
+  display: none;
+}
+
+.faq-answer,.faq:not([open]) .faq-answer {
+  display: block!important;
+  padding: 0 1mm 3mm;
+  color: #000!important;
+}
+
+.faq,.panel-intro {
+  break-inside: avoid-page;
+}
+
+h2,h3 {
+  break-after: avoid-page;
+}
+
+p {
+  orphans: 3;
+  widows: 3;
+}

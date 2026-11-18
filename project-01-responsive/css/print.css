@@ -1,0 +1,152 @@
+/* Printed guide: remove UI decoration, retain opening hours and access data. */
+@page {
+  size: A4;
+  margin: 16mm 14mm;
+}
+
+:root {
+  color: #000;
+  background: #fff;
+}
+
+html,body {
+  background: #fff!important;
+  color: #000!important;
+  font: 10.5pt/1.55 'Yu Gothic',sans-serif!important;
+  print-color-adjust: economy;
+}
+
+a {
+  color: #000!important;
+  text-decoration: none!important;
+}
+
+.demo-note,.header-nav,.hero-art,.ticker,.event-visual,.print-button,.map-illustration,.footer,.skip-link,.cta,.hero-small {
+  display: none!important;
+}
+
+.site-header {
+  position: static;
+  border: 0;
+  padding-bottom: 5mm;
+}
+
+.header-inner {
+  min-height: 0;
+}
+
+.logo {
+  font-size: 19pt;
+}
+
+.container {
+  width: 100%!important;
+  max-width: none!important;
+}
+
+.hero {
+  padding: 3mm 0 8mm;
+  display: block;
+  min-height: 0;
+}
+
+.hero h1 {
+  font-size: 30pt;
+  line-height: 1.3;
+  margin: 0 0 4mm;
+}
+
+.hero-lead {
+  font-size: 10pt;
+}
+
+.section,.access {
+  padding: 7mm 0!important;
+  background: #fff!important;
+}
+
+.section h2,.access h2 {
+  font-size: 19pt;
+  line-height: 1.4;
+}
+
+.about,.info-grid,.access-grid {
+  display: block;
+}
+
+.section-copy {
+  font-size: 10pt;
+}
+
+.facts {
+  margin-top: 4mm;
+}
+
+.section-header {
+  display: block;
+}
+
+.event-grid {
+  display: block;
+}
+
+.event-card {
+  display: block;
+  border: 1px solid #aaa;
+  margin-bottom: 3mm;
+  break-inside: avoid;
+}
+
+.event-content {
+  padding: 3mm;
+}
+
+.event-content h3 {
+  margin: 1mm 0;
+}
+
+.event-content>p:not(.event-meta) {
+  margin: 1mm 0;
+}
+
+.event-label {
+  border: 0;
+  padding: 0;
+}
+
+.info-table th,.info-table td {
+  padding: 3mm 2mm;
+}
+
+.faq {
+  margin-top: 6mm;
+}
+
+.faq details {
+  break-inside: avoid;
+}
+
+.faq details>p {
+  display: block!important;
+}
+
+.access p {
+  font-size: 10pt;
+}
+
+.access-note {
+  font-size: 8pt!important;
+}
+
+.section,.event-card,.info-table tr,.faq details {
+  break-inside: avoid-page;
+}
+
+h1,h2,h3 {
+  break-after: avoid-page;
+}
+
+p {
+  orphans: 3;
+  widows: 3;
+}

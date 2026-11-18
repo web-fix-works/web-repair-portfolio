@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="フロントエンド制作事例の設計と実装について紹介します。">
+<title>制作・実装の概要｜FRONTEND LAB</title>
+<link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body>
+<header><a href="../index.html">← 作品一覧に戻る</a></header>
+<main>
+<h1>制作・実装の概要</h1>
+<p>既存Webサイトの修正・改修で求められる、<strong>表示・操作・更新運用</strong>の3つの観点をテーマにした制作作品集です。各作品は実際に操作できるサイトと、設計内容がわかる技術解説で構成しています。</p>
+<h2>作品</h2>
+<table>
+<thead>
+<tr>
+  <th>ケース</th>
+  <th>主な実装</th>
+  <th>サイト</th>
+  <th>解説</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>01 Fieldnotes</td>
+  <td>レスポンシブ / 印刷CSS</td>
+  <td><a href="../project-01-responsive/index.html">サイト</a></td>
+  <td><a href="../project-01-responsive/docs/index.html">解説</a></td>
+</tr>
+<tr>
+  <td>02 HELIO</td>
+  <td>タブ / FAQ検索 / キーボード操作</td>
+  <td><a href="../project-02-ui/index.html">サイト</a></td>
+  <td><a href="../project-02-ui/docs/index.html">解説</a></td>
+</tr>
+<tr>
+  <td>03 SAMPLE COMPANY</td>
+  <td>XML/XSLT / 記事一覧・詳細</td>
+  <td><a href="../project-03-cms/site/index.html">サイト</a></td>
+  <td><a href="../project-03-cms/docs/index.html">解説</a></td>
+</tr>
+</tbody>
+</table>
+<h2>設計で重視したこと</h2>
+<h3>画面幅と操作環境への適応</h3>
+<p>固定幅に依存しないレイアウト、見出し構造、可視フォーカス、キーボード操作を組み合わせて、さまざまな環境で情報に到達しやすい構造を採用しています。</p>
+<h3>印刷・PDF保存</h3>
+<p>紙面では画面上のナビゲーションや装飾を整理し、利用案内や記事本文を残します。FAQのような開閉式コンテンツは、印刷前後で表示状態を制御しています。</p>
+<h3>変更しやすい構成</h3>
+<p>データと表示の分離、HTMLの意味付け、部品単位のCSS、既存の操作を妨げにくいJavaScriptを意識しています。CMS作品では記事XMLからHTMLを生成します。</p>
+<h2>使用技術</h2>
+<p>HTML / CSS / JavaScript / XML / XSLT 1.0 / Python（静的サイト生成）</p>
+<hr />
+<p>※掲載作品は自主制作のコンセプトサイトです。</p>
+
+<footer class="note">FRONTEND LAB / Selected Works — Concept Projects</footer>
+</main>
+</body>
+</html>
